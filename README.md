@@ -1,75 +1,157 @@
-# React + TypeScript + Vite
+# NetworkTwinPro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![NetworkTwinPro Dashboard](src/assets/project.jpeg)
 
-Currently, two official plugins are available:
+## AI-Powered RAN Digital Twin for 5G/6G Networks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+NetworkTwinPro is a real-time Radio Access Network (RAN) Digital Twin that simulates a multi-cell 5G network environment. The platform visualizes user mobility, traffic demand, network congestion, throughput trends, and autonomous optimization decisions through an interactive operations dashboard.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Dashboard Preview
 
-## Expanding the ESLint configuration
+The dashboard provides:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Live 5G cell cluster visualization
+- User mobility simulation
+- Traffic demand generation
+- Throughput monitoring
+- Congestion forecasting
+- Autonomous network optimization
+- Real-time KPI monitoring
+- Interactive network analytics
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Network Topology Simulation
+- Multi-cell 5G cluster
+- Coverage visualization
+- Dynamic user distribution
+- Cell-level analytics
 
+### Traffic & Mobility Modeling
+- User movement simulation
+- Traffic demand generation
+- Load balancing visualization
+- Session tracking
+
+### Congestion Forecasting
+- Cell congestion prediction
+- Risk analysis
+- Trend monitoring
+- Capacity insights
+
+### Autonomous Network Operations
+- Closed-loop optimization
+- AI-driven decision support
+- Resource allocation visualization
+- Performance monitoring
+
+### Real-Time Dashboard
+- Served traffic metrics
+- Offered traffic metrics
+- Average SINR tracking
+- Throughput analytics
+- Cells-at-risk monitoring
+
+---
+
+## Technology Stack
+
+### Frontend
+- React 19
+- TypeScript
+- TanStack Start
+- TanStack Router
+- TanStack Query
+
+### UI & Visualization
+- Tailwind CSS
+- Radix UI
+- Recharts
+- Lucide Icons
+
+### Development Tools
+- Vite
+- ESLint
+- Prettier
+
+### Deployment
+- Vercel
+- Cloudflare Workers
+
+---
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── hooks/
+├── lib/
+├── routes/
+├── router.tsx
+├── start.ts
+└── server.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Local Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
 
+```bash
+git clone https://github.com/cherry1027/NetworkTwinPro.git
+cd NetworkTwinPro
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+Build production version:
+
+```bash
+npm run build
+```
+
+---
+
+## Future Enhancements
+
+- AI-powered traffic forecasting
+- Reinforcement Learning optimization
+- Open RAN integration
+- Network slicing simulation
+- Digital Twin synchronization
+- 6G scenario modeling
+- Cloud-native deployment
+
+---
+
+## Author
+
+**Sri Charan Varanasi**
+
+Master's Student – Software Engineering  
+Blekinge Institute of Technology, Sweden
+
+GitHub: https://github.com/cherry1027
+
+---
+
+## License
+
+MIT License
